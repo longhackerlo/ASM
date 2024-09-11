@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+// Hàm thực hiện phép cộng
+double add(double a, double b) {
+    return a + b;
+}
+
+// Hàm thực hiện phép trừ
+double subtract(double a, double b) {
+    return a - b;
+}
+
+int main() {
+    double num1, num2;
+
+    // Nhập dữ liệu từ người dùng
+    cout << "Nhập số thứ nhất: ";
+    cin >> num1;
+    cout << "Nhập số thứ hai: ";
+    cin >> num2;
+
+    // Thực hiện phép cộng và trừ
+    cout << "Kết quả cộng: " << add(num1, num2) << endl;
+    cout << "Kết quả trừ: " << subtract(num1, num2) << endl;
+
+    return 0;
+}
